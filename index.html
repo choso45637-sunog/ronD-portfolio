@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RonD Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">RonD<span>Portfolio</span></a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-left">
+          <h1 class="hero-title">RonD<br /><span>PORTFOLIO</span></h1>
+          <p class="hero-sub">Hello good day! I'm Ron and here is my portfolio. Showing my skills and some of my projects</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="mock-screen" aria-hidden="false">
+            <div class="mock-inner">
+              <div class="mock-card">
+                <!-- Two sample images (replace with your screenshots) -->
+                <img class="mock-img" src="kohi.png" alt="Kofi Station preview" data-key="0" />
+                <img class="mock-img" src="LE.png" alt="Little Earthlings preview" data-key="1" />
+                <div class="mock-overlay">
+                  <div class="mock-title">Project Preview</div>
+                </div>
+              </div>
+            </div>
+            <div class="dots">
+              <span class="dot active" data-key="0"></span>
+              <span class="dot" data-key="1"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi! I'm <strong>Ron Justine</strong>, a web developer who builds beautiful and usable digital experiences.</p>
+          <p>I can do both backend and frontend.</p>
+        </div>
+
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <!-- Project 1 -->
+        <article class="card">
+          <div class="card-media">
+            <!-- sample image (replace with your screenshot) -->
+            <img class="project-img" src="kohi.png" alt="Kofi Station screenshot" />
+            <div class="card-tag">Web</div>
+          </div>
+          <div class="card-body">
+            <h4>Kofi Station</h4>
+            <p>Coffee Management System — Third Year Final Project</p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <div class="card-media">
+            <img class="project-img" src="LE.png" alt="Little Earthlings screenshot" />
+            <div class="card-tag">App</div>
+          </div>
+          <div class="card-body">
+            <h4>Little Earthlings</h4>
+            <p>Gamifying Climate Change Education for Grade 4 - 6 Students.
+            https://littleearthlings.capstone-two.com</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <label>
+            <span>Your name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <p><strong>Email</strong><br /><a href="mailto:hello@example.com">rondicdican45637@gmail.com</a></p>
+          <p><strong>Location</strong><br />Pulilan, Bulacan</p>
+          <p><strong>Download</strong><br /><a href="RonResume.pdf" download>Resume (PDF)</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Ron Justine R. Dicdican</div>
+      <div class="socials">
+        <a href="https://github.com/choso45637-sunog" aria-label="GitHub">GitHub</a>
+        <a href="https://www.facebook.com/Jotarooooo" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
